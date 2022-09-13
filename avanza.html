@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // LEFT TRIANGLE
+        // for(i = 0; i<=5; i++){
+        //     for(j = 0; j<i; j++){
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+
+        // REVERSE LOOP
+        // for(i = 0; i<=5; i++){
+        //     for(space = 5; space> i; space--){
+        //         document.write(". ");
+        //     }
+        //     for(j = 0; j<i; j++){
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+
+        let numbers = [1,2,3,4,5,6,7,8,9];
+
+        var user = parseInt(prompt("Type A Number"));
+
+        for(i = 0; i<numbers.length; i++){
+            if(user == numbers[i]){
+                document.write( numbers[i] + " Is A Valid Number");
+            }
+        }
+        if(user != numbers){
+            document.write(user + " Is Not A Valid Number");
+        }
+    </script>
+</body>
+</html>
